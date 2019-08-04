@@ -1,0 +1,435 @@
+html,
+body{
+	height:100%;
+}
+
+#headerLogo {
+	height: 57px;
+	width: 79px;
+}
+
+#underline {
+	border: 2px solid #C2AC59;
+	padding: 0 0 0 0px;
+	margin: 0 30% 5% 30%;
+}
+
+.navbar {
+	 text-align: center;
+}
+
+.helper-span {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+#cover {
+	background: #222 url('../assets/VancouverAerialVariation.jpg') no-repeat fixed;
+	background-size: cover;
+	color: white;
+	height: 100%;
+	text-align: center;
+	display: flex;
+	align-items: center;
+    overflow: hidden;
+}
+
+#cover-icon {
+	margin-top: 15%;
+	width: 100%;
+}
+
+#cover-caption{
+	width: 100%;
+}
+
+.cover-container {
+	padding: 0 5%;
+}
+
+.about-caption {
+	padding: 0 5%;
+	color: #11284b;
+	width: 100%;
+    margin-top: 35px;
+    margin-bottom: 35px;
+	text-align: center;
+}
+
+.sponsor-caption {
+	padding: 0 5%;
+	color: #11284b;
+	width: 100%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+	text-align: center;
+}
+
+#about {
+	background: #8491A4 no-repeat fixed;
+	background-size: cover;
+	color: black;
+	text-align: center;
+	display: block;
+	align-items: center;
+    overflow: auto;
+}
+
+
+#about-paragraph {
+    max-width: 500px;
+    display: inline-block;
+}
+
+#year {
+    background: #f8f9fa no-repeat fixed;
+    background-size: cover;
+    color: black;
+    text-align: center;
+    display: block;
+    align-items: center;
+    overflow: auto;
+}
+
+
+#year-paragraph {
+    max-width: 600px;
+    display: inline-block;
+}
+
+.year-caption {
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+#sponsors {
+    background: #ffffff no-repeat fixed;
+    background-size: cover;
+    color: black;
+    text-align: center;
+    display: block;
+    align-items: center;
+    overflow: auto;
+}
+
+#team {
+	background: #222 url('../assets/ubc.jpg') no-repeat fixed;;
+	background-size: cover;
+	color: #11284b;
+	text-align: center;
+	align-items: center;
+	display: block;
+	overflow: auto;
+}
+
+.caption{
+	max-width: 500px;
+	text-align: center;
+	align-items: center;
+	display: inline-block;
+	color: #11284b !important; 
+    margin-top: 45px;
+}
+
+.socialmediaicons {
+	text-align: center;
+	align-items: center;
+}
+
+#team-container {
+	width: 100%;
+	height: 100%;
+}
+
+
+#contact {
+	background: #8491A4 no-repeat fixed;
+	background-size: cover;
+	color: #11284b;
+	display: block;
+	overflow: auto;
+}
+
+.contact-container {
+	max-width: 600px !important;
+    padding: 30px;
+    border-radius: 1%;
+}
+
+.container {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* FontAwesome for working BootSnippet :> */
+
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #108d6f;
+    border-color: #108d6f;
+    box-shadow: none;
+    outline: none;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #007b5e;
+    border-color: #007b5e;
+}
+
+section {
+    padding: 60px 0;
+}
+
+section .section-title {
+    text-align: center;
+    color: #007b5e;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+#team .card {
+    border: none;
+    background: #f8f9fa;
+}
+
+.image-flip:hover .backside{
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    border-radius: .25rem;
+}
+
+.flip-0{
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+}
+
+.image-flip:hover .frontside{
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.flip-180{
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.mainflip {
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -moz-transition: 1s;
+    -moz-transform: perspective(1000px);
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.frontside {
+    position: relative;
+    -webkit-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    z-index: 2;
+    margin-bottom: 30px;
+}
+
+.backside {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    -webkit-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    -moz-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+}
+
+.frontside,
+.backside {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transition: 1s;
+    -moz-transform-style: preserve-3d;
+    -o-transition: 1s;
+    -o-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+}
+
+.frontside .card,
+.backside .card {
+    min-height: 400px;
+}
+
+.backside .card a {
+    font-size: 18px;
+    color: #11284b !important;
+}
+
+.frontside .card .card-title,
+.backside .card .card-title {
+    color: #11284b !important;
+}
+
+.frontside .card .card-body img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+/* Style all font awesome icons */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+/* Twitter */
+.fa-linkedin {
+    background: #55ACEE;
+    color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.footer-content {
+    text-align: center;
+    align-content: center;
+    font-size: 90%;
+    padding-top: 20px;
+}
+
+.footer-list {
+    display: inline-block;
+    list-style: none;
+    padding: 0;
+}
+
+.footer-list li {
+    display: inline-block;
+    padding: 5px;
+}
+
+@media (min-width: 444px) { 
+   #cover-icon {
+        margin-top: 9%;
+        width: 90%;
+    }
+
+    #cover-caption{
+        width: 100%;
+        padding: 0 10% 0 10%;
+    }
+
+    .cover-container {
+        padding: 0 5%;
+    }
+	
+	#container3 {
+		height: 250px;
+	}
+}
+
+@media (min-width: 576px) { 
+   #cover-icon {
+        width: 88%;
+    }
+	
+	.container3 {
+		height: 250px;
+	}
+}
+
+@media (min-width: 692px) { 
+   #cover-icon {
+        width: 70%;
+    }
+	
+	.container3 {
+		height: 300px;
+	}
+}
+
+@media (min-width: 992px) {
+    #cover-icon {
+        margin-top: 9%;
+        width: 50%;
+    }
+
+    #cover-caption{
+        width: 100%;
+        padding: 0 10% 0 10%;
+    }
+
+    .cover-container {
+        padding: 0 5%;
+    }
+	
+	.container3 {
+		height: 350px;
+	}
+}
+
+@media (min-width: 1200px) {
+    #cover-icon {
+        margin-top: 9%;
+        width: 40%;
+    }
+
+    #cover-caption{
+        width: 100%;
+        padding: 0 10% 0 10%;
+    }
+
+    .cover-container {
+        padding: 0 5%;
+    }
+	
+	.container3 {
+		height: 400px;
+	}
+}
