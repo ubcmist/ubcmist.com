@@ -105,6 +105,7 @@ body{
 .year-caption, .beacon-caption {
     margin-top: 35px;
     margin-bottom: 35px;
+		text-align: center;
 }
 
 #sponsors {
@@ -307,10 +308,32 @@ section .section-title {
 }
 
 
+.card .card-body .img-fluid {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+
+
 .abdo .backside {
 	height: 400px;
 	overflow-y: scroll;
+	font-size: 0.85rem;
 }
+.abdo .backside .card-title{
+	font-size: 1.25rem;
+}
+
+.abdo .backside .card-body{
+	padding-top: 0px !important;
+	padding-bottom: 0px !important;
+}
+
+#team .row{
+	display: flex !important;
+}
+
 
 /* Style all font awesome icons */
 .fa {
@@ -386,6 +409,33 @@ height: 100%;
 #beacon .row{
 	padding: 2%;
 }
+
+#second img{
+	vertical-align:middle;
+}
+
+.sketch{
+	width: 90%;
+}
+
+.imagerow{
+	display: flex;
+   align-items: center;
+}
+
+#team .row{
+	padding:2%;
+}
+
+.collapse .card {
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	font-size: 0.85rem;
+}
+
+
+
+
 
 @media (min-width: 444px) {
    #cover-icon {
