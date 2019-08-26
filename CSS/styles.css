@@ -201,49 +201,6 @@ section .section-title {
     background: #f8f9fa;
 }
 
-.image-flip:hover .backside{
-    -webkit-transform: rotateY(0deg);
-    -moz-transform: rotateY(0deg);
-    -o-transform: rotateY(0deg);
-    -ms-transform: rotateY(0deg);
-    transform: rotateY(0deg);
-    border-radius: .25rem;
-}
-
-.flip-0{
-    -webkit-transform: rotateY(0deg);
-    -moz-transform: rotateY(0deg);
-    -o-transform: rotateY(0deg);
-    -ms-transform: rotateY(0deg);
-    transform: rotateY(0deg);
-}
-
-.image-flip:hover .frontside{
-    -webkit-transform: rotateY(180deg);
-    -moz-transform: rotateY(180deg);
-    -o-transform: rotateY(180deg);
-    transform: rotateY(180deg);
-}
-
-.flip-180{
-    -webkit-transform: rotateY(180deg);
-    -moz-transform: rotateY(180deg);
-    -o-transform: rotateY(180deg);
-    transform: rotateY(180deg);
-}
-
-.mainflip {
-    -webkit-transition: 1s;
-    -webkit-transform-style: preserve-3d;
-    -ms-transition: 1s;
-    -moz-transition: 1s;
-    -moz-transform: perspective(1000px);
-    -moz-transform-style: preserve-3d;
-    -ms-transform-style: preserve-3d;
-    transition: 1s;
-    transform-style: preserve-3d;
-    position: relative;
-}
 
 .frontside {
     position: relative;
@@ -253,55 +210,29 @@ section .section-title {
     margin-bottom: 30px;
 }
 
-.backside {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: white;
-    -webkit-transform: rotateY(-180deg);
-    -moz-transform: rotateY(-180deg);
-    -o-transform: rotateY(-180deg);
-    -ms-transform: rotateY(-180deg);
-    transform: rotateY(-180deg);
-    -webkit-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
-    -moz-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
-    box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+
+
+ .card,
+ {
+    max-height: 400px;
+
 }
 
-.frontside,
-.backside {
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    -ms-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -webkit-transition: 1s;
-    -webkit-transform-style: preserve-3d;
-    -moz-transition: 1s;
-    -moz-transform-style: preserve-3d;
-    -o-transition: 1s;
-    -o-transform-style: preserve-3d;
-    -ms-transition: 1s;
-    -ms-transform-style: preserve-3d;
-    transition: 1s;
-    transform-style: preserve-3d;
+#team .col-xs-12, #team .col-sm-6 #team .col-md-4{
+	padding: 2%;
 }
 
-.frontside .card,
-.backside .card {
-    min-height: 400px;
-}
-
-.backside .card a {
+.card a {
     font-size: 18px;
     color: #11284b !important;
 }
 
-.frontside .card .card-title,
-.backside .card .card-title {
+ .card .card-title,
+{
     color: #11284b !important;
 }
 
-.frontside .card .card-body img {
+ .card .card-body img {
     width: 120px;
     height: 120px;
     border-radius: 50%;
@@ -314,21 +245,6 @@ section .section-title {
     border-radius: 50%;
 }
 
-
-
-.abdo .backside {
-	height: 400px;
-	overflow-y: scroll;
-	font-size: 0.85rem;
-}
-.abdo .backside .card-title{
-	font-size: 1.25rem;
-}
-
-.abdo .backside .card-body{
-	padding-top: 0px !important;
-	padding-bottom: 0px !important;
-}
 
 #team .row{
 	display: flex !important;
@@ -408,10 +324,6 @@ height: 100%;
 
 #beacon .row{
 	padding: 2%;
-}
-
-#second img{
-	vertical-align:middle;
 }
 
 .sketch{
