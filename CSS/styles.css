@@ -201,17 +201,6 @@ section .section-title {
     background: #f8f9fa;
 }
 
-
-.frontside {
-    position: relative;
-    -webkit-transform: rotateY(0deg);
-    -ms-transform: rotateY(0deg);
-    z-index: 2;
-    margin-bottom: 30px;
-}
-
-
-
  .card,
  {
     max-height: 400px;
