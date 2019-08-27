@@ -103,7 +103,6 @@ body{
     display: inline-block;
 }
 
-
 #year, #beacon {
     background: #e6e6ff no-repeat fixed;
     background-size: cover;
@@ -131,7 +130,7 @@ body{
     display: inline-block;
 }
 
-.year-caption, .beacon-paragraph {
+.year-caption, .beacon-caption {
     margin-top: 35px;
     margin-bottom: 35px;
 }
@@ -178,7 +177,6 @@ body{
 .recruitment-caption {
     margin-top: 35px;
     margin-bottom: 35px;
-		text-align: center;
 }
 
 .Position-openings-caption{
@@ -386,6 +384,7 @@ section .section-title {
     background: #f8f9fa;
 }
 
+
 .card {
     max-height: 400px;
 }
@@ -403,40 +402,11 @@ section .section-title {
 .card .card-title,{
     color: #11284b !important;
 }
-
- .card,
- {
-    max-height: 400px;
-
-}
-
-#team .col-xs-12, #team .col-sm-6 #team .col-md-4{
-	padding: 2%;
-}
-
-.card a {
-    font-size: 18px;
-    color: #11284b !important;
-}
-
- .card .card-title,
-{
-    color: #11284b !important;
-}
-
- .card .card-body img {
+.card .card-body img {
     width: 120px;
     height: 120px;
     border-radius: 50%;
 }
-
-
-.card .card-body .img-fluid {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-}
-
 
 #team .row{
     display:flex !important;
@@ -445,12 +415,6 @@ section .section-title {
 #team .col-xs-12, #team .col-sm-6, #team .col-md-4{
     padding:2%;
 }
-
-
-#team .row{
-	display: flex !important;
-}
-
 
 /* Style all font awesome icons */
 .fa {
@@ -504,59 +468,7 @@ section .section-title {
     padding: 5px;
 }
 
-
 @media (min-width: 444px) { 
-#beacon{
-	background-color: #F8F9FA;
-}
-
-.video{
-	position: relative;
-	padding-bottom: 56.25%; /* 16:9 */
-	padding-top: 25px;
-	height: 0;
-}
-
-.video iframe{
-	position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-}
-
-#beacon .row{
-	padding: 2%;
-}
-
-.sketch{
-	width: 90%;
-}
-
-.imagerow{
-	display: flex;
-   align-items: center;
-}
-
-#team .row{
-	padding:2%;
-}
-
-.collapse .card {
-	border-top-left-radius: 0px;
-	border-top-right-radius: 0px;
-	font-size: 0.85rem;
-}
-
-.newimages img{
-	width: 100%;
-
-}
-
-
-
-@media (min-width: 444px) {
-
    #cover-icon {
         margin-top: 9%;
         width: 90%;
