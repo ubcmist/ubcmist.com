@@ -13,7 +13,30 @@
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-	</head>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script type="text/javascript" src="javascript/smoothscroll.js"></script> 
+		<script>
+				function myFunction() {
+				  var dots = document.getElementById("dots");
+				  var moreText = document.getElementById("more");
+				  var btnText = document.getElementById("myBtn");
+				
+				  if (dots.style.display === "none") {
+					dots.style.display = "inline";
+					btnText.innerHTML = "&nbsp &nbsp</br> Read more"; 
+					moreText.style.display = "none";
+					window.location.replace('#Recruitment');
+
+				  } else {
+					dots.style.display = "none";
+					btnText.innerHTML = "Read less"; 
+					moreText.style.display = "inline";
+
+				  }
+				}
+		</script>
+				
+		</head>
 
 	<body>
 		<nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
@@ -23,26 +46,27 @@
 			    <span class="navbar-toggler-icon"></span>
 			  </button>
 			  <div class="collapse navbar-collapse" id="navbarNavDropdown">
-			    <ul class="nav ml-auto navbar-nav">
+			    <ul class="nav-self-made nav ml-auto">
 			      <li class="nav-item">
 			        <a data-scroll class="nav-link" href="#about">About</a>
 			      </li>
 			      <li class="nav-item">
-			        <a data-scroll class="nav-link" href="#year">2019/2020</a>
+			        <a data-scroll class="nav-link" href="#year">2018/19</a>
 			      </li>
-						<li class="nav-item">
-							<a data-scroll class="nav-link" href="#beacon">Project Beacon</a>
-						</li>
 			      <li class="nav-item">
 			        <a  class="nav-link" href="#team">Team</a>
-			      </li>
-			      <li class="nav-item">
-			        <a class="nav-link" href="#contact">Contact</a>
-			      </li>
+				  </li>
+				  <li class="nav-item">
+						<a data-scroll class="nav-link" href="#Recruitment" >Recruitment</a>
+				  </li>
+			      <li class="nav-item-bordered-header">
+					<a class="nav-link nav-link-new"  href="#contact">Contact Us</a>
+				  </li>
 			    </ul>
 			  </div>
 		  </div>
 		</nav>
+		
 
 		<section id="cover" class="pb-5">
 			<div id="cover-caption">
@@ -53,8 +77,10 @@
 				</div>
 			</div>
 		</section>
-
+	
+		
 		<section id="about" class="pb-5">
+				
 			<div class="container">
 				<div class="about-caption">
 					<h1>About</h1>
@@ -67,27 +93,116 @@
 		<section id="year" class="pb-5">
 			<div class="container">
 				<div class="year-caption">
-					<h1>2019/2020 Project</h1>
+					<h1>2018/19</h1>
 					<hr id="underline">
-					<p id="year-paragraph">Our 2019/2020 project is a wheelchair power assist device for developing countries</p>
+					<p id="year-paragraph">With our team's model being driven by a new innovation every year, MIST has decided to focus their attention on a specific field for 2018/19 - mental health. While researching projects for the team, we realized that mental health is a key topic in medicine but is not given as much attention in engineering. This was the catalyst that sparked our interest in the topic, as we believe that there is a lot of room for innovation and growth in this particular field.</br></br> We hope to blend hardware, software, and machine learning together to help reduce stress and anxiety. By summer 2019, we plan on having this project completed and hope to have a positive impact in the mental health community as a whole.</p>
 				</div>
 			</div>
 		</section>
 
-		<section id="beacon" class="pb-5">
+		<section id="Recruitment" class="pb-5">
 			<div class="container">
-				<div class="beacon-caption">
-					<h1>Project Beacon</h1>
-					<hr id="underline">
-					<p id="beacon-paragraph">With our team's model being driven by a new innovation every year, MIST has decided to focus their attention on a specific field for 2018/19 - mental health. While researching projects for the team, we realized that mental health is a key topic in medicine but is not given as much attention in engineering. This was the catalyst that sparked our interest in the topic, as we believe that there is a lot of room for innovation and growth in this particular field.</br></br> We hope to blend hardware, software, and machine learning together to help reduce stress and anxiety. By summer 2019, we plan on having this project completed and hope to have a positive impact in the mental health community as a whole.</p>
+				<div class="recruitment-caption">
+						<h1>The Recruitment Process</h1>
+						<hr id="underline">
+						
 				</div>
-			</div>
+				<div class="row">
+						<p id="recruitment-process-paragraph"> <font size="4"><b>1. Submit application</b><br/> </font> Please review the position descriptions below and fill out the recruitment application using the provided link. To increase your chances of acceptance, please include any relevant skills and qualifications you may have. Don’t forget to let us know why you are ambitious to join us. </p>
+						<p id="recruitment-process-paragraph"> <font size="4"><b>2. Interview</b><br/> </font> Once the deadline has passed, we process the applications and select those with the highest potential for the interview stage. We extremely care about the behavioural skills as much as the technical ones. So prepare yourself for every aspect. </p>
+						<p id="recruitment-process-paragraph"> <font size="4"><b>3. Offer To Join</b><br/> </font> Lastly, we will select only a handful of applicants whose background, knowledge, passion, and goals are most aligned with our team’s goals and projects. If you choose to accept the offer, you will receive emails regarding on-boarding and training process. </p>
+					</div>
+					<div class="nav-item-bordered">
+						<a class="nav-link nav-link-apply"  href="https://docs.google.com/forms/d/1Nr9pZvDIODvOpibL5jhAcGeDTuqrZ0KMnv-cPnK6Leo/prefill" target="_blank">Apply Here</a>
+					</div>
+					<div class="container">
+						<div class="Position-openings-caption">
+								<h1><span style="font-weight:normal;"> Position Openings  </span> </h1>								
+					</div>
+					<span id="dots">...  </span>
+					<span id="more">
+						<div class="row">
+							<div id="Job-brief-paragraph">
+								<p > <font size="4"><span style="font-weight:500">Electrical Designer and Developer</span> 
+									<br/><br/></font> We are seeking electrical designers to help us create and test dependable electrical 
+									systems for our healthcare products. You will exercise your system thinking, creativity, 
+									and determination as you develop electrical systems using custom-built circuitry or 
+									off-the-shelf components. Excellent communication, organizational, and leadership skills 
+									are of great importance for your success.<br/><br/>
+									You should have experience with or ambition to learn:
+								</p>
+									<ul>
+										<li>Principles of Circuits, Motors, Motor Controller, Batteries</li>
+										<li>Microcontrollers and Python/C/C++ programming</li>
+										<li>Wiring, Soldering, Electronic Lab Tools</li>
+										<li>Machining and Rapid Prototyping such as 3D Printers</li>
+									</ul>
+									<p > To learn more about responsibilities and required skills, <a  href="Resources/Electrical System Designer & Developer.pdf" target="_blank">Click Here</a> </p>	
+							</div>		
+							<div id="Job-brief-paragraph">
+								<p> <font size="4"><span style="font-weight:500">Business Strategist</span> <br/><br/> </font> We are looking for strategic planners to define our team’s direction and business 
+									objectives for healthcare products. You will help us obtain a competitive advantage in the field and 
+									allocate resources appropriately. Strategic thinking is the most important skill in this role. 
+									You should be analytical with strong organizational abilities.
+									<br/><br/>
+									To fit well in our team, you should have:
+								</p>
+								<ul>
+										<li>Understanding of market research and data analysis</li>
+										<li>Knowledge of business operations and procedures</li>
+										<li>Demonstrable strategic thinking abilities</li>
+										<li>Analytical mind with problem-solving aptitude</li>
+										<li>Organizational and leadership skills</li>
+										<li>Excellent communication skills</li>
+										<li>Business Administration, Marketing, Finance or a related field</li>
+									</ul>
+									<p > To learn more about responsibilities and required skills, <a  href="Resources/Business-Strategist.pdf" target="_blank">Click Here</a> </p>	
+							</div>
+							<div id="Job-brief-paragraph">
+								<p> <font size="4"><span style="font-weight:500"> Communication and Social Media Coordinator </span><br/><br/> </font> We are looking for a communication and social media coordinator 
+									to increase MIST presence and exposure in UBC community. You will develop original content and suggest 
+									creative ways to engage with UBC students and Industry to promote our team and project. 
+									You can have significant contribution to MIST’s success by exploring, identifying, and 
+									engaging with potential sponsors. If you are experienced or ambitious in communication and 
+									engagement in-person or online, we’d like to meet you.<br/><br/>
+									To fit well in our team, you should have:
+								</p>
+								<ul>
+										<li>Experienced in coordinating Social Media presence</li>
+										<li>Ability to deliver creative content (text, image and video)</li>
+										<li>knowledge of SEO, keyword research and Google Analytics</li>
+										<li>Excellent communication skills</li>
+										<li>Multitasking and analytical skills</li>
+										<li>Experienced in Marketing, New media or relevant field</li>
+									</ul>
+									<p > To learn more about responsibilities and required skills, <a  href="Resources/Communications Coordinator.pdf" target="_blank">Click Here</a> </p>	
+							</div>
+							<div id="Job-brief-paragraph">
+								<p > <font size="4"><span style="font-weight:500">Mechanical Designer and Developer</span> 
+									<br/><br/></font> We are looking for mechanical designers to make reliable and durable 
+									mechanical systems for our healthcare products. You will expand and solidify your skill sets through developing 
+									prototypes and rigorously testing them. Your most important characteristic for us, aside from great interpersonal and 
+									behavioural skills, is the ability to follow the principle of Design for Manufacturing and Assembly (DFMA).<br/><br/>
+									You should have experience with or ambition to learn:
+								</p>
+									<ul>
+										<li>Principles of mechanics, e.g. solid mechanics, materials, dynamics, and Design for Manufacturing and Assembly (DFMA)</li>
+										<li>CAD software, e.g. SolidWorks</li>
+										<li>Analysis software, e.g. ANSYS</li>
+										<li>Machining and rapid prototyping tools such as drill, waterjet cutter, and 3d printer</li>
+									</ul>
+								<p > To learn more about responsibilities and required skills, <a  href="Resources/Mechanical Designer & Developer.pdf" target="_blank">Click Here</a> </p>	
+							</div>
+						</div>
+					</span>
+					<span class="fake-link"  onclick="myFunction()" id="myBtn"> &nbsp &nbsp</br> Read more</span>
+					</div>
 		</section>
 
 		<section id="sponsors" class="pb-5">
 			<div class="container">
 				<div class="sponsor-caption">
-					<h1>Sponsors</h1>
+					<h1>drs</h1>
 					<hr id="underline">
 					<div class="container3" style="overflow: hidden;">
 					  <div class="row">
@@ -247,26 +362,27 @@
 		                        <div class="frontside">
 		                            <div class="card">
 		                                <div class="card-body text-center">
-		                                    <p><img class=" img-fluid" src="./assets/bhaskar.png" alt="card image"></p>
-		                                    <h4 class="card-title">Bhaskar Yechuri</h4>
-		                                    <h5 class="card-title">Hardware Captain</h5>
-		                                    <p class="card-text">Electrical Engineering, biomedical option, 4th year</p>
+		                                    <p><img class=" img-fluid" src="./assets/farid.png" alt="card image"></p>
+		                                    <h4 class="card-title">Farid Faraji</h4>
+		                                    <h5 class="card-title">Software Developer</h5>
+		                                    <p class="card-text">Major in Computer Science, 4th year</p>
 		                                </div>
 		                            </div>
 		                        </div>
 		                        <div class="backside">
 		                            <div class="card">
 		                                <div class="card-body text-center mt-4">
-		                                    <h4 class="card-title">Bhaskar Yechuri</h4>
-		                                    <p class="card-text">Ever since I was a child, I have been fascinated with living things and the way that learning can help us improve lives and reduce suffering. This fascination slowly morphed into a concrete interest in the field biomedical engineering for both medical and veterinary settings, leading to me pursuing a degree in electrical/biomedical engineering at UBC.</p>
+		                                    <h4 class="card-title">Farid Faraji</h4>
+		                                    <p class="card-text"> I have experience and interest in wide variety of Computer Applications such as Computer Systems, Software design and 
+												data science, I have previously been interning as a lead software engineer at Stratus Aeronatics specializing in making drone software</p>
 		                                    <ul class="list-inline">
 		                                        <li class="list-inline-item">
-		                                            <a class="social-icon text-xs-center" target="_blank" href="https://www.facebook.com/bhaskar.yechuri">
+		                                            <a class="social-icon text-xs-center" target="_blank" href="https://www.facebook.com/farid.faraji.54">
 		                                                <i class="fa fa-facebook"></i>
 		                                            </a>
 		                                        </li>
 		                                        <li class="list-inline-item">
-		                                            <a class="social-icon text-xs-center" target="_blank" href="https://www.linkedin.com/in/bhaskar-y-808710100/">
+		                                            <a class="social-icon text-xs-center" target="_blank" href="https://www.linkedin.com/in/farid-f-60265680/">
 		                                                <i class="fa fa-linkedin"></i>
 		                                            </a>
 		                                        </li>
@@ -276,9 +392,50 @@
 		                        </div>
 		                    </div>
 		                </div>
-		            </div>
-		            <!-- ./Team member -->
+					</div>
+					<!-- ./Team member -->
 		            <!-- Team member -->
+
+					<div class="col-xs-12 col-sm-6 col-md-4">
+							<div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+								<div class="mainflip">
+									<div class="frontside">
+										<div class="card">
+											<div class="card-body text-center">
+												<p><img class=" img-fluid" src="./assets/masoud.png" alt="card image"></p>
+												<h4 class="card-title">Masoud Mokhtari</h4>
+												<h5 class="card-title">Machine Learning Specialist</h5>
+												<p class="card-text">Electrical Engineering, 4th year</p>
+											</div>
+										</div>
+									</div>
+									<div class="backside">
+										<div class="card">
+											<div class="card-body text-center mt-4">
+												<h4 class="card-title">Masoud Mokhtari</h4>
+												<p class="card-text">Hey! My love for engineering started in high school when I built a heavyweight combat robot. I am currently the UBC IEEE Communications Society co-chair, and I am planning on finding an internship in the coming summer. I am also passionate about aerospace engineering and would like to get a Master's degree in that field.</p>
+												<ul class="list-inline">
+													<li class="list-inline-item">
+														<a class="social-icon text-xs-center" target="_blank" href="https://www.facebook.com/masoud.uzil">
+															<i class="fa fa-facebook"></i>
+														</a>
+													</li>
+													<li class="list-inline-item">
+														<a class="social-icon text-xs-center" target="_blank" href="https://www.linkedin.com/in/masoud-mokhtari">
+															<i class="fa fa-linkedin"></i>
+														</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+	
+		            <!-- ./Team member -->
+					<!-- Team member -->
+					<!---
 		            <div class="col-xs-12 col-sm-6 col-md-4">
 		                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
 		                    <div class="mainflip">
@@ -319,9 +476,10 @@
 		                        </div>
 		                    </div>
 		                </div>
-		            </div>
+		            </div>-->
 		            <!-- ./Team member -->
-		            <!-- Team member -->
+					<!-- Team member -->
+					<!--
 		            <div class="col-xs-12 col-sm-6 col-md-4">
 		                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
 		                    <div class="mainflip">
@@ -357,83 +515,7 @@
 		                        </div>
 		                    </div>
 		                </div>
-		            </div>
-		            <!-- ./Team member -->
-		            <!-- Team member -->
-		            <div class="col-xs-12 col-sm-6 col-md-4">
-		                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
-		                    <div class="mainflip">
-		                        <div class="frontside">
-		                            <div class="card">
-		                                <div class="card-body text-center">
-		                                    <p><img class=" img-fluid" src="./assets/bhaskar.png" alt="card image"></p>
-		                                    <h4 class="card-title">Daniel Zhou</h4>
-		                                    <h5 class="card-title">Hardware Specialist</h5>
-		                                    <p class="card-text">Electrical Engineering, biomedical option, 4th year</p>
-		                                </div>
-		                            </div>
-		                        </div>
-		                        <div class="backside">
-		                            <div class="card">
-		                                <div class="card-body text-center mt-4">
-		                                    <h4 class="card-title">Daniel Zhou</h4>
-		                                    <p class="card-text">Uh oh...Daniel's bio is coming soon, stay tuned!</p>
-		                                    <ul class="list-inline">
-		                                        <li class="list-inline-item">
-		                                            <a class="social-icon text-xs-center" target="_blank" href="https://www.facebook.com/daniel.zhou.73">
-		                                                <i class="fa fa-facebook"></i>
-		                                            </a>
-		                                        </li>
-		                                        <li class="list-inline-item">
-		                                            <a class="social-icon text-xs-center" target="_blank" href="https://www.linkedin.com/in/daniel-zhou-63837813b/">
-		                                                <i class="fa fa-linkedin"></i>
-		                                            </a>
-		                                        </li>
-		                                    </ul>
-		                                </div>
-		                            </div>
-		                        </div>
-		                    </div>
-		                </div>
-		            </div>
-		            <!-- ./Team member -->
-					<!-- Team member -->
-		            <div class="col-xs-12 col-sm-6 col-md-4">
-		                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
-		                    <div class="mainflip">
-		                        <div class="frontside">
-		                            <div class="card">
-		                                <div class="card-body text-center">
-		                                    <p><img class=" img-fluid" src="./assets/bhaskar.png" alt="card image"></p>
-		                                    <h4 class="card-title">Masoud Mokhtari</h4>
-		                                    <h5 class="card-title">Machine Learning Specialist</h5>
-		                                    <p class="card-text">Electrical Engineering, 3rd year</p>
-		                                </div>
-		                            </div>
-		                        </div>
-		                        <div class="backside">
-		                            <div class="card">
-		                                <div class="card-body text-center mt-4">
-		                                    <h4 class="card-title">Masoud Mokhtari</h4>
-		                                    <p class="card-text">Hey! My love for engineering started in high school when I built a heavyweight combat robot. I am currently the UBC IEEE Communications Society co-chair, and I am planning on finding an internship in the coming summer. I am also passionate about aerospace engineering and would like to get a Master's degree in that field.</p>
-		                                    <ul class="list-inline">
-		                                        <li class="list-inline-item">
-		                                            <a class="social-icon text-xs-center" target="_blank" href="https://www.facebook.com/masoud.uzil">
-		                                                <i class="fa fa-facebook"></i>
-		                                            </a>
-		                                        </li>
-		                                        <li class="list-inline-item">
-		                                            <a class="social-icon text-xs-center" target="_blank" href="https://www.linkedin.com/in/masoud-mokhtari">
-		                                                <i class="fa fa-linkedin"></i>
-		                                            </a>
-		                                        </li>
-		                                    </ul>
-		                                </div>
-		                            </div>
-		                        </div>
-		                    </div>
-		                </div>
-		            </div>
+		            </div>-->
 		            <!-- ./Team member -->
 					<!-- Team member -->
 		            <div class="col-xs-12 col-sm-6 col-md-4">
@@ -616,6 +698,7 @@
 		            </div>
 		            <!-- ./Team member -->
 					<!-- Team member -->
+					<!--
 		            <div class="col-xs-12 col-sm-6 col-md-4">
 		                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
 		                    <div class="mainflip">
@@ -656,7 +739,7 @@
 		                        </div>
 		                    </div>
 		                </div>
-		            </div>
+		            </div> -->
 		            <!-- ./Team member -->
 										<!-- Team member -->
 		            <div class="col-xs-12 col-sm-6 col-md-4">
@@ -665,10 +748,10 @@
 		                        <div class="frontside">
 		                            <div class="card">
 		                                <div class="card-body text-center">
-		                                    <p><img class=" img-fluid" src="./assets/bhaskar.png" alt="card image"></p>
+		                                    <p><img class=" img-fluid" src="./assets/nima.png" alt="card image"></p>
 		                                    <h4 class="card-title">Nima Kondori</h4>
 		                                    <h5 class="card-title">Machine Learning Specialist</h5>
-		                                    <p class="card-text">Electrical Engineering, 3rd Year</p>
+		                                    <p class="card-text">Electrical Engineering, 4th Year</p>
 		                                </div>
 		                            </div>
 		                        </div>
@@ -705,7 +788,12 @@
 	            <div class="container contact-container">
 	               <div class="caption">
 			    		<h1>Contact</h1>
-			    	</div>
+					</div>
+					<!-- 
+					<div class="txt-color">
+			    		<p> please contact us if you want to sponsor us, be with us &hearts;</p>
+					</div>
+					  ./Team member -->
 	              <div class="row">
 	                <div class="col-md-12">
 	                  <form action="http://formspree.io/ubc.mist@gmail.com" method="POST" id="contact-form" class="form-horizontal">
@@ -719,7 +807,7 @@
 	                    </div>
 	                    <div class="form-group ">
 	                      <label for="inputText">Your Message</label>
-	                     <textarea class="form-control" name="message" placeholder="Description" id="inputText"></textarea>
+	                     <textarea class="form-control" name="message" placeholder="Description" id="inputText"></textarea> 
 	                    </div>
 	                    <button type="submit" class="btn  btn-primary btn-sm">Send Message</button>
 	                  </form>
@@ -743,11 +831,8 @@
 		        <a data-scroll class="nav-link" href="#about">About</a>
 		      </li>
 		      <li class="nav-item">
-		        <a data-scroll class="nav-link" href="#year">2019/2020</a>
+		        <a data-scroll class="nav-link" href="#year">2018/19</a>
 		      </li>
-					<li class="nav-item">
-						<a data-scroll class="nav-link" href="#beacon">Project Beacon</a>
-					</li>
 		      <li class="nav-item">
 		        <a  class="nav-link" href="#team">Team</a>
 		      </li>
@@ -755,7 +840,8 @@
 		        <a class="nav-link" href="#contact">Contact</a>
 		      </li>
 		    </ul>
-	      </div>
+		  </div>
+
 	    </footer>
 
 	</body>

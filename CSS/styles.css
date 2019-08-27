@@ -1,7 +1,13 @@
-html,
+
+html {
+    scroll-behavior: smooth;
+  }
+  
+
 body{
 	height:100%;
 }
+
 
 #headerLogo {
 	height: 57px;
@@ -15,7 +21,7 @@ body{
 }
 
 .navbar {
-	 text-align: center;
+     text-align: center;
 }
 
 .helper-span {
@@ -23,6 +29,10 @@ body{
     height: 100%;
     vertical-align: middle;
 }
+
+
+
+  
 
 #cover {
 	background: #222 url('../assets/VancouverAerialVariation.jpg') no-repeat fixed;
@@ -66,6 +76,16 @@ body{
 	text-align: center;
 }
 
+
+.sponsor-txt {
+    max-width: 60px;
+	text-align: center;
+	align-items: center;
+	display: inline-block;
+	color: #11284b !important; 
+    margin-top: 45px;
+}
+
 #about {
 	background: #8491A4 no-repeat fixed;
 	background-size: cover;
@@ -74,6 +94,7 @@ body{
 	display: block;
 	align-items: center;
     overflow: auto;
+    scroll-behavior: smooth;
 }
 
 
@@ -82,8 +103,8 @@ body{
     display: inline-block;
 }
 
-#year, #beacon{
-    background: #f8f9fa no-repeat fixed;
+#year {
+    background: #e6e6ff no-repeat fixed;
     background-size: cover;
     color: black;
     text-align: center;
@@ -92,19 +113,72 @@ body{
     overflow: auto;
 }
 
-#beacon {
-	background: #a7b0be no-repeat fixed;
+
+#Recruitment {
+    background: #f2f4fa no-repeat fixed;
+    background-size: cover;
+    color: black;
+    text-align: center;
+    align-items: center;
+    overflow: auto;
 }
 
 
-#year-paragraph, #beacon-paragraph {
+
+#year-paragraph {
     max-width: 600px;
     display: inline-block;
 }
 
-.year-caption, .beacon-caption {
+.year-caption {
     margin-top: 35px;
     margin-bottom: 35px;
+}
+
+
+
+#recruitment-process-paragraph {
+    text-align: left;
+    margin-left: 40px;
+    margin-right: 40px;
+    max-width: 300px;
+
+
+}
+
+.recruitment-caption {
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.Position-openings-caption{
+    margin-top: 35px;
+    margin-bottom: 35px;
+
+}
+
+
+.row .read-more { 
+    position: absolute; 
+    bottom: 0; 
+    left: 0;
+    width: 100%; 
+    text-align: center; 
+    margin: 0; padding: 30px 0; 
+      
+    /* "transparent" only works here because == rgba(0,0,0,0) */
+    background-image: linear-gradient(to bottom, transparent, black);
+  }
+
+  
+#Job-brief-paragraph{
+    text-align: left;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 60px;
+    max-width: 450px;
+
+
 }
 
 #sponsors {
@@ -132,7 +206,7 @@ body{
 	text-align: center;
 	align-items: center;
 	display: inline-block;
-	color: #11284b !important;
+	color: #11284b !important; 
     margin-top: 45px;
 }
 
@@ -154,6 +228,69 @@ body{
 	display: block;
 	overflow: auto;
 }
+.nav-item{
+    font-size: 20px;
+    font-weight: 260;
+    letter-spacing: 0.10em;
+    color: #8491A4;
+
+}
+
+
+.nav-link{
+
+    color: #8491A4; 
+
+}
+
+.nav-link-new{
+
+    color: white; 
+
+}
+
+
+.nav-link-apply{
+
+    color: #8972a6; 
+
+}
+
+
+.nav-item-bordered{
+    max-width: 200px;
+    font-size: 20px;
+    font-weight: 260;
+    letter-spacing: 0.1em;
+    list-style-position:inside;
+    border: 2px solid #8972a6;
+    border-radius: 5px;
+    word-spacing: 1px;
+    margin-left: 25px;
+
+}
+
+.nav-item-bordered-header{
+    max-width: 200px;
+    font-size: 20px;
+    font-weight: 260;
+    letter-spacing: 0.1em;
+    list-style-position:inside;
+    border: 2px solid #8972a6;
+    border-radius: 5px;
+    word-spacing: 1px;
+    margin-left: 25px;
+    background-color: #8972a6;
+
+}
+
+
+.nav-self-made{
+    color: #8491A4;
+    word-spacing: 200px;
+    
+
+}
 
 .contact-container {
 	max-width: 600px !important;
@@ -164,7 +301,25 @@ body{
 .container {
     padding-top: 10px;
     padding-bottom: 10px;
+    
+
 }
+
+.bordered {
+    width: 180px;
+    height: 55px;
+    padding: 20px;
+    border: 1px solid blue;
+    border-radius: 2px;
+  }
+
+#more {display: none;}
+
+.fake-link {
+    color: gray;
+    cursor: pointer;
+}
+
 
 /* FontAwesome for working BootSnippet :> */
 
@@ -231,6 +386,8 @@ section .section-title {
     transform: rotateY(180deg);
 }
 
+
+
 .mainflip {
     -webkit-transition: 1s;
     -webkit-transform-style: preserve-3d;
@@ -293,6 +450,11 @@ section .section-title {
 .backside .card a {
     font-size: 18px;
     color: #11284b !important;
+}
+
+.txt-color{
+
+    color: #dde5eb !important;
 }
 
 .frontside .card .card-title,
@@ -358,7 +520,7 @@ section .section-title {
     padding: 5px;
 }
 
-@media (min-width: 444px) {
+@media (min-width: 444px) { 
    #cover-icon {
         margin-top: 9%;
         width: 90%;
@@ -372,27 +534,27 @@ section .section-title {
     .cover-container {
         padding: 0 5%;
     }
-
+	
 	#container3 {
 		height: 250px;
 	}
 }
 
-@media (min-width: 576px) {
+@media (min-width: 576px) { 
    #cover-icon {
         width: 88%;
     }
-
+	
 	.container3 {
 		height: 250px;
 	}
 }
 
-@media (min-width: 692px) {
+@media (min-width: 692px) { 
    #cover-icon {
         width: 70%;
     }
-
+	
 	.container3 {
 		height: 300px;
 	}
@@ -412,7 +574,7 @@ section .section-title {
     .cover-container {
         padding: 0 5%;
     }
-
+	
 	.container3 {
 		height: 350px;
 	}
@@ -432,7 +594,7 @@ section .section-title {
     .cover-container {
         padding: 0 5%;
     }
-
+	
 	.container3 {
 		height: 400px;
 	}
