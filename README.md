@@ -1,2 +1,2 @@
 # ubcmist.com
-the UBS mist website
+The UBC MIST Website
