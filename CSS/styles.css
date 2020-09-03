@@ -6,19 +6,54 @@ body{
 	height:100%;
 }
 
+#underline {
+	border: 2px solid #DCB405; /*yellow/gold*/
+	padding: 0 0 0 0px;
+	margin: 0 30% 5% 30%;
+}
+
+.imagerow{
+    display:flex;
+    align-items: center;
+}
+
+.nav-link{
+    color: #0C2345; /*navy*/
+}
+
+.nav-link:hover {
+	color: #DCB405; /*gold*/
+}
+
+.nav-item{
+    font-size: 20px;
+    font-weight: 260;
+    letter-spacing: 0.10em;
+    color: #DCB405; /*gold*/
+}
+
+.container {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.bordered {
+    width: 180px;
+    height: 55px;
+    padding: 20px;
+    border: 1px solid blue;
+    border-radius: 2px;
+}
+
 #headerLogo {
 	height: 57px;
 	width: 79px;
 }
 
-#underline {
-	border: 2px solid #DCB405; /*yellow/gold, previously #C2AC59*/
-	padding: 0 0 0 0px;
-	margin: 0 30% 5% 30%;
-}
+/*Navigation Bar*/
 
 .navbar {
-     text-align: center;
+    text-align: center;
 }
 
 .helper-span {
@@ -27,11 +62,42 @@ body{
     vertical-align: middle;
 }
 
+.nav-self-made{
+    color: #DCB405; /*gold*/
+    word-spacing: 200px;
+}
+
+/*Contact Buttons*/
+
+.nav-link-new{
+    color: white; 
+}
+
+.nav-link-new:hover {
+	color: #0C2345; /*navy*/
+}
+
+.nav-item-bordered-header{
+    max-width: 200px;
+    font-size: 20px;
+    font-weight: 260;
+    letter-spacing: 0.1em;
+    list-style-position:inside;
+    border: 2px solid #DCB405; /*gold*/
+    border-radius: 5px;
+    word-spacing: 1px;
+    margin-left: 25px;
+	margin-top: -3px;
+    background-color: #DCB405; /*gold*/
+}
+
+/*Cover*/
+
 #cover {
 	background: #222 url('../assets/VancouverAerialVariation.jpg') no-repeat fixed;
 	background-size: cover;
-	color: white;
 	height: 100%;
+	color: white;
 	text-align: center;
 	display: flex;
 	align-items: center;
@@ -49,39 +115,15 @@ body{
 
 .cover-container {
 	padding: 0 5%;
+	filter: drop-shadow(0px 0px 50px #000000);
 }
 
-.about-caption {
-	padding: 0 5%;
-	color: #0C2345; /*navy, previously #11284b */
-	width: 100%;
-    margin-top: 35px;
-    margin-bottom: 35px;
-	text-align: center;
-}
-
-.sponsor-caption {
-	padding: 0 5%;
-	color: #0C2345; /*navy, previously #11284b */
-	width: 100%;
-    margin-top: 0px;
-    margin-bottom: 0px;
-	text-align: center;
-}
-
-.sponsor-txt {
-    max-width: 60px;
-	text-align: center;
-	align-items: center;
-	display: inline-block;
-	color: #0C2345 !important; /*navy previously #11284b */
-    margin-top: 45px;
-}
+/*About*/
 
 #about {
-	background: #91ADCD no-repeat fixed; /*blue 50%, previously 8491A4*/
+	background: #FFFFFF no-repeat fixed; /*white*/
 	background-size: cover;
-	color: black;
+	color: #0C2345; /*navy*/
 	text-align: center;
 	display: block;
 	align-items: center;
@@ -89,57 +131,135 @@ body{
     scroll-behavior: smooth;
 }
 
+.about-caption {
+	padding: 0 5%;
+	color: #0C2345; /*navy*/
+	width: 100%;
+    margin-top: 35px;
+    margin-bottom: 35px;
+	text-align: center;
+}
+
 #about-paragraph {
     max-width: 500px;
     display: inline-block;
 }
 
-#year, #beacon {
-    background: #EFEFEF no-repeat fixed; /*grey, previously #e6e6ff*/
-    background-size: cover;
-    color: black;
-    text-align: center;
-    display: block;
-    align-items: center;
+/*Current Year*/
+
+#currentyear {
+	background: #C4D4E4 no-repeat fixed; /*grey/blue*/
+	background-size: cover;
+	color: #0C2345; /*navy*/
+	text-align: center;
+	display: block;
+	align-items: center;
     overflow: auto;
+    scroll-behavior: smooth;
 }
 
-#Recruitment {
-    background: #EFEFEF no-repeat fixed; /*grey, previously #f2f4fa*/
-    background-size: cover;
-    color: black;
-    text-align: center;
-    align-items: center;
-    overflow: auto;
+.currentyear-caption {
+	padding: 0 5%;
+	color: #0C2345; /*navy*/
+	width: 100%;
+    margin-top: 35px;
+    margin-bottom: 35px;
+	text-align: center;
 }
 
-#year-paragraph, #beacon-paragraph {
-    max-width: 600px;
+#currentyear-paragraph {
+    max-width: 500px;
     display: inline-block;
 }
 
-.year-caption, .beacon-caption {
+/*Recruitment*/
+
+#recruitment {
+    background: #EFEFEF no-repeat fixed; /*grey*/
+    background-size: cover;
+    color: #0C2345; /*navy*/
+    text-align: center;
+    align-items: center;
+    overflow: auto;
+}
+
+.recruitment-caption {
     margin-top: 35px;
     margin-bottom: 35px;
 }
 
-.imagerow{
-    display:flex;
-    align-items: center;
+#recruitment-process-paragraph {
+    text-align: left;
+    margin-left: 40px;
+    margin-right: 40px;
+    max-width: 300px;
 }
 
-#beacon .row{
-    padding: 2%;
-    display: flex;
+.apply-link-apply{
+    color: #0C2345; /*navy*/
 }
 
-.sketch{
-  width: 90%;
+.apply-bordered{
+    max-width: 200px;
+    font-size: 20px;
+    font-weight: 260;
+    letter-spacing: 0.1em;
+    list-style-position:inside;
+    border: 2px solid #0C2345; /*navy*/
+    border-radius: 5px;
+    word-spacing: 1px;
+    margin-left: 25px;
 }
 
-#beacon img{
-  padding: 2%;
-  margin: 0 auto;
+.Position-openings-caption{
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.row .read-more { 
+    position: absolute; 
+    bottom: 0; 
+    left: 0;
+    width: 100%; 
+    text-align: center; 
+    margin: 0; padding: 30px 0; 
+    /* "transparent" only works here because == rgba(0,0,0,0) */
+    background-image: linear-gradient(to bottom, transparent, black);
+}
+
+#Job-brief-paragraph{
+    text-align: left;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 60px;
+    max-width: 450px;
+}
+
+/*2018/2019*/
+
+#y1819 {
+	background: #C4D4E4 no-repeat fixed; /*grey/blue*/
+	background-size: cover;
+	color: #0C2345; /*navy*/
+	text-align: center;
+	display: block;
+	align-items: center;
+    overflow: auto;
+    scroll-behavior: smooth;
+}
+
+.y1819-caption {
+	padding: 0 5%;
+	color: #0C2345; /*navy*/
+	width: 100%;
+    margin-top: 35px;
+    margin-bottom: 35px;
+	text-align: center;
+}
+
+#y1819-paragraph {
+    max-width: 500px;
+    display: inline-block;
 }
 
 .video{
@@ -157,50 +277,53 @@ body{
     height: 100%;
 }
 
-#recruitment-process-paragraph {
-    text-align: left;
-    margin-left: 40px;
-    margin-right: 40px;
-    max-width: 300px;
 
-
+#y1819 .row{
+    padding: 2%;
+    display: flex;
 }
 
-.recruitment-caption {
+#y1819 img{
+	padding: 2%;
+	margin: 0 auto;
+}
+
+/*2019/2020*/
+
+#y1920 {
+	background: #EFEFEF no-repeat fixed; /*grey*/
+	background-size: cover;
+	color: #0C2345; /*navy*/
+	text-align: center;
+	display: block;
+	align-items: center;
+    overflow: auto;
+    scroll-behavior: smooth;
+}
+
+.y1920-caption {
+	padding: 0 5%;
+	color: #0C2345; /*navy*/
+	width: 100%;
     margin-top: 35px;
     margin-bottom: 35px;
+	text-align: center;
 }
 
-.Position-openings-caption{
-    margin-top: 35px;
-    margin-bottom: 35px;
-
+#y1920-paragraph {
+    max-width: 500px;
+    display: inline-block;
 }
 
-.row .read-more { 
-    position: absolute; 
-    bottom: 0; 
-    left: 0;
-    width: 100%; 
-    text-align: center; 
-    margin: 0; padding: 30px 0; 
-      
-    /* "transparent" only works here because == rgba(0,0,0,0) */
-    background-image: linear-gradient(to bottom, transparent, black);
-  }
-
-#Job-brief-paragraph{
-    text-align: left;
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-bottom: 60px;
-    max-width: 450px;
-
-
+.image1920 {
+	display:flex;
+    align-items: center;
 }
+
+/*Sponsors*/
 
 #sponsors {
-    background: #ffffff no-repeat fixed;
+    background: #FFFFFF no-repeat fixed;
     background-size: cover;
     color: black;
     text-align: center;
@@ -209,23 +332,44 @@ body{
     overflow: auto;
 }
 
+.sponsor-caption {
+	padding: 0 5%;
+	color: #0C2345; /*navy*/
+	width: 100%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+	text-align: center;
+}
+
+.sponsor-txt {
+    max-width: 60px;
+	text-align: center;
+	align-items: center;
+	display: inline-block;
+	color: #0C2345 !important; /*navy*/
+    margin-top: 45px;
+}
+
+/*Team*/
+
 #team {
-	background: #222 url('../assets/ubc.jpg') no-repeat fixed;;
+	background: #222 url('../assets/ubc.jpg') no-repeat fixed;
 	background-size: cover;
-	color: #0C2345; /*navy, previously #11284b */
+	color: #0C2345; /*navy*/
 	text-align: center;
 	align-items: center;
 	display: block;
 	overflow: auto;
 }
 
-.caption{
+.team-caption{
 	max-width: 500px;
 	text-align: center;
 	align-items: center;
 	display: inline-block;
-	color: #0C2345 !important; /*navy, previously #11284b */
+	color: #0C2345 !important; /*navy*/
     margin-top: 45px;
+	filter: drop-shadow(0px 0px 50px #000000);
 }
 
 .socialmediaicons {
@@ -238,149 +382,22 @@ body{
 	height: 100%;
 }
 
-#contact {
-	background: #91ADCD no-repeat fixed; /*blue 50%, previously 8491A4*/
-	background-size: cover;
-	color: #0C2345; /*navy, previously #11284b */
-	display: block;
-	overflow: auto;
-}
-
-.nav-item{
-    font-size: 20px;
-    font-weight: 260;
-    letter-spacing: 0.10em;
-    color: #91ADCD; /*blue 50%, previously 8491A4*/
-
-}
-
-.nav-link{
-
-    color: #91ADCD; /*blue 50%, previously 8491A4*/
-
-}
-
-.nav-link-new{
-
-    color: white; 
-
-}
-
-.nav-link-apply{
-
-    color: #EBDC89; /*yellow/gold 50%, previously #8972a6*/
-
-}
-
-.nav-item-bordered{
-    max-width: 200px;
-    font-size: 20px;
-    font-weight: 260;
-    letter-spacing: 0.1em;
-    list-style-position:inside;
-    border: 2px solid #EBDC89; /*yellow/gold 50%, previously #8972a6*/
-    border-radius: 5px;
-    word-spacing: 1px;
-    margin-left: 25px;
-
-}
-
-.nav-item-bordered-header{
-    max-width: 200px;
-    font-size: 20px;
-    font-weight: 260;
-    letter-spacing: 0.1em;
-    list-style-position:inside;
-    border: 2px solid #EBDC89; /*yellow/gold 50%, previously #8972a6*/
-    border-radius: 5px;
-    word-spacing: 1px;
-    margin-left: 25px;
-	margin-top: -3px;
-    background-color: #EBDC89; /*yellow/gold 50%, previously #8972a6*/
-
-}
-
-.nav-self-made{
-    color: #91ADCD; /*blue 50%, previously 8491A4*/
-    word-spacing: 200px;
-    
-
-}
-
-.contact-container {
-	max-width: 600px !important;
-    padding: 30px;
-    border-radius: 1%;
-}
-
-.container {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    
-
-}
-
-.bordered {
-    width: 180px;
-    height: 55px;
-    padding: 20px;
-    border: 1px solid blue;
-    border-radius: 2px;
-  }
-
-#more {display: none;}
-
-.fake-link {
-    color: gray;
-    cursor: pointer;
-}
-
-/* FontAwesome for working BootSnippet :> */
-
-@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
-
-.btn-primary:hover,
-.btn-primary:focus {
-    background-color: #839A8B; /*green, previously #108d6f*/
-    border-color: #839A8B; /*green, previously #108d6f*/
-    box-shadow: none;
-    outline: none;
-}
-
-.btn-primary {
-    color: #fff;
-    background-color: #839A8B; /*green, previously #007b5e*/
-    border-color: #839A8B; /*green, previously #007b5e*/
-}
-
-section {
-    padding: 60px 0;
-}
-
-section .section-title {
-    text-align: center;
-    color: #839A8B; /*green, previously #007b5e*/
-    margin-bottom: 50px;
-    text-transform: uppercase;
-}
-
 #team .card {
     border: none;
-    background: #ffffff /*white, previously #f8f9fa */
+    background: #ffffff /*white*/
 }
 
 .card a {
     font-size: 18px;
-    color: #0C2345 !important; /*navy, previously #11284b */
+    color: #0C2345 !important; /*navy*/
 }
 
-.txt-color{
-
-    color: #EFEFEF !important; /*grey, previously #dde5eb*/
+.txt-color {
+    color: #EFEFEF !important; /*grey*/
 }
 
-.card .card-title,{
-    color: #0C2345 !important; /*navy, previously #11284b */
+.card .card-title {
+    color: #0C2345 !important; /*navy*/
 }
 
 .card .card-body img {
@@ -397,7 +414,37 @@ section .section-title {
 	padding:2%;
 }
 
-/* Style all font awesome icons */
+#team .card {
+    border: none;
+    background: #ffffff /*white*/
+}
+
+.card a {
+    font-size: 18px;
+    color: #0C2345 !important; /*navy*/
+}
+
+section {
+    padding: 60px 0;
+}
+
+section .section-title {
+    text-align: center;
+    color: #839A8B; /*green*/
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+.card .card-title,{
+    color: #0C2345 !important; /*navy*/
+}
+
+.txt-color{
+    color: #EFEFEF !important; /*grey*/
+}
+
+/*Social Media*/
+
 .fa {
     padding: 20px;
     font-size: 30px;
@@ -406,30 +453,53 @@ section .section-title {
     text-decoration: none;
 }
 
-/* Add a hover effect if you want */
 .fa:hover {
     opacity: 0.7;
 }
 
-/* Set a specific color for each brand */
-
-/* Facebook */
 .fa-facebook {
     background: #3B5998; /*mid-blue*/
     color: white;
 }
 
-/* Twitter */
 .fa-linkedin {
     background: #55ACEE; /*bright blue*/
     color: white;
 }
 
-/* Twitter */
 .fa-twitter {
     background: #55ACEE; /*bright blue*/
     color: white;
 }
+
+/*Contact*/
+
+#contact {
+	background: #C4D4E4 no-repeat fixed; /*blue/gray*/
+	background-size: cover;
+	color: #0C2345; /*navy*/
+	display: block;
+	overflow: auto;
+}
+
+.contact-container {
+	max-width: 600px !important;
+}
+
+.submit {
+	background-color: #0C2345; /*navy*/
+	border: none;
+	border-radius: 3px;
+	font-size: 20px;
+	color: #FFFFFF; /*white*/
+}
+
+.submit:hover {
+	background-color: #DCB405; /*gold*/
+	color: #0C2345; /*navy*/
+}
+
+/*Footer*/
 
 .footer-content {
     text-align: center;
@@ -448,6 +518,15 @@ section .section-title {
     display: inline-block;
     padding: 5px;
 }
+
+#more {display: none;}
+
+.fake-link {
+    color: gray;
+    cursor: pointer;
+}
+
+/*Media?*/
 
 @media (min-width: 444px) { 
    #cover-icon {
@@ -527,4 +606,5 @@ section .section-title {
 	.container3 {
 		height: 400px;
 	}
+}
 }
