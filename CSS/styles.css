@@ -188,6 +188,13 @@ body{
     margin-bottom: 35px;
 }
 
+.qr-container {
+	max-width: 450px;
+	display:flex;
+    margin-left: auto;
+	margin-right: auto;
+}
+
 #recruitment-process-paragraph {
     text-align: left;
     margin-left: 40px;
@@ -467,8 +474,8 @@ section .section-title {
     color: white;
 }
 
-.fa-twitter {
-    background: #55ACEE; /*bright blue*/
+.fa-instagram {
+    background: #E1306C; /*pink*/
     color: white;
 }
 
@@ -522,8 +529,18 @@ section .section-title {
 #more {display: none;}
 
 .fake-link {
-    color: gray;
+    color: #0C2345;
     cursor: pointer;
+}
+
+/*Land Acknowledgement*/
+
+.landack {
+    text-align: center;
+    align-content: center;
+	color: #0C2345;
+	text-align: center;
+	background-color: #EFEFEF;
 }
 
 /*Media?*/
